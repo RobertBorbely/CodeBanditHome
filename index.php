@@ -72,7 +72,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 			<div class="masthead clearfix">
 				<div class="inner">
 					<h2 class="masthead-brand">Code Bandit</h2>
-					<nav>
+					<nav role="navigation">
 						<ul class="nav masthead-nav">
 							<li id="home" class="active hvr-pulse-grow"><a href="#home-page" data-toggle="tooltip" data-placement="bottom" title="Home">
 								<i class="fa fa-home fa-2x"></i></a>
@@ -194,5 +194,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slider-effect.js"></script>
+<script src="js/viewport.js"></script>
 </body>
 </html>
