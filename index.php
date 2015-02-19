@@ -30,13 +30,13 @@
 		}*/
 		mail($to, $subject, $body, $from);
 /* If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {*/
 	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+		$result='<div id="#alert" class="alert alert-success">Thank You! I will be in touch</div>';
 	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+		$result='<div id="#alert" class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
 	}
-}*/
+//}
 	}
 ?>
 <!DOCTYPE html>
@@ -95,6 +95,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
 			<div class="body-container">
 				<section id="home-page" class="inner cover page-active container">
+						<?php echo $result ?>
 						<h1 class="cover-heading">Üdvözöllek a honlapomon!</h1>
 						<p class="lead">Ez az oldal azért jött létre, hogy bemutassa az eddigi munkáim és a folyamatban lévő projektjeim.</p>
 						<p class="lead"><!-- Social Icons comes here facebook github later twitter dribble linkedln-->
