@@ -4,9 +4,10 @@
 		$email = $_POST['email'];
 		$message = $_POST['message'];
 		$human = intval($_POST['human']);
-		$from = 'Demo Contact Form';
-		$to = 'respectsas@gmail.com';
-		$subject = 'Message from Contact Demo ';
+		$from = 'Contact form';
+		$to = 'codebanditinfo@gmail.com';
+		$subject2 = $_POST['subject2'];
+		$subject = "[CodeBandit contact] $subject2";
 
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
 		// Check if name has been entered
@@ -23,18 +24,19 @@
 		if (!$_POST['message']) {
 			$errMessage = 'Please enter your message';
 		}
-		//Check if simple anti-bot test is correct
+		/*Check if simple anti-bot test is correct
 		if ($human !== 5) {
 			$errHuman = 'Your anti-spam is incorrect';
-		}
-// If there are no errors, send the email
+		}*/
+		mail($to, $subject, $body, $from);
+/* If there are no errors, send the email
 if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	if (mail ($to, $subject, $body, $from)) {
 		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
 	} else {
 		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
 	}
-}
+}*/
 	}
 ?>
 <!DOCTYPE html>
@@ -83,7 +85,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 							<li id="portfolio" class="hvr-pulse-grow"><a href="#portfolio-page" data-toggle="tooltip" data-placement="bottom" title="Portfólió">
 								<i class="fa fa-picture-o fa-2x"></i></a>
 							</li>
-							<li id="contact" class="hvr-pulse-grow"><a href="#contact-page" data-toggle="tooltip" data-placement="bottom" title="Kapcsolat">
+							<li id="contact" class="hvr-pulse-grow"><a href="#contactModal" data-toggle="modal" data-placement="bottom" title="Kapcsolat">
 								<i class="fa fa-envelope fa-2x"></i></a>
 							</li>
 						</ul>
@@ -126,16 +128,16 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 				<h1>About</h1>
 			</section>
 
-			<section id="contact-page" class="inner cover page-hidden">
+			<!--<section id="contact-page" class="inner cover page-hidden">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3">
 								<h1 class="page-header text-center">Kapcsolat</h1>
 							<form class="form-horizontal" role="form" method="post" action="index.php">
 								<div class="form-group">
-									<label for="name" class="col-sm-2 control-label">Name</label>
+									<label for="name" class="col-sm-2 control-label">Név</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+										<input type="text" class="form-control" id="name" name="name" placeholder="Neve" value="<?php echo htmlspecialchars($_POST['name']); ?>">
 										<?php echo "<p class='text-danger'>$errName</p>";?>
 									</div>
 								</div>
@@ -156,7 +158,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 								<div class="form-group">
 									<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+										<input type="text" class="form-control" id="human" name="human" placeholder="Válasz">
 										<?php echo "<p class='text-danger'>$errHuman</p>";?>
 									</div>
 								</div>
@@ -171,6 +173,47 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 									</div>
 								</div>
 							</form>
+						</div>
+					</div>
+				</div>
+			</section>-->
+
+			<section id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" area-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+							<h3 id="contactModalLabel">Kapcsolat</h3>
+						</div>
+						<div class="modal-body">
+							<div class="container-fluid">
+								<form method="post" action="index.php" role="form" class="form-horizontal col-sm-12">
+									<div class="form-group">
+										<label>Név</label>
+										<input class="form-control required" placeholder="Neve" name="name" data-placement="top" data-trigger="manual"
+													 data-content="Legalább 3 karakter hosszúnak kell lennie és csak betűket tartalmazhat" type="text">
+									</div>
+									<div class="form-group">
+										<label>Tárgy</label>
+										<input class="form-control" placeholder="Tárgy" name="subject2" data-placemont="right" data-trigger="manual"
+													 type="text">
+									</div>
+									<div class="form-group">
+										<label>Üzenet</label>
+										<textarea class="form-control" placeholder="Your message here.." name="message" rows="4" data-placement="top" data-trigger="manual"></textarea>
+									</div>
+									<div class="form-group">
+										<label>E-Mail</label>
+										<input class="form-control email" name="email" placeholder="email@you.com (so that we can contact you)"
+												   data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)"
+													 type="email">
+									</div>
+									<div class="form-group"><button id="submit" name="submit" type="submit" value="Send" class="btn btn-success pull-right">Küldés</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Mégse</button>
 						</div>
 					</div>
 				</div>
@@ -195,5 +238,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slider-effect.js"></script>
 <script src="js/viewport.js"></script>
+<script src="js/validator.js"></script>
 </body>
 </html>

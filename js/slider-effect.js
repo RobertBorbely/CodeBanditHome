@@ -42,19 +42,4 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
-	$('#contact').click(function (e){
-		var currentActivePage = $('.page-active');
-		var nextActivePage = $('#contact-page');
-		var currentActiveLink = $('.active');
-
-		currentActivePage.hide('fade',500).switchClass('page-active','page-hidden');
-		nextActivePage.delay(500).show('fade',500).switchClass('page-hidden', 'page-active');
-
-		currentActiveLink.removeClass('active');
-		$(this).addClass('active');
-
-		e.preventDefault();
-	});
-	
-
 });
