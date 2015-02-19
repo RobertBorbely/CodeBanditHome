@@ -5,11 +5,11 @@ $(document).ready(function() {
   if (width < 450){
     $('li').removeClass('hvr-pulse-grow');
     $('i').removeClass('hvr-grow-rotate');
-  }
+  };
 
-  if (height < 768){
+  if (height < 550){
     $('li').removeClass('hvr-pulse-grow');
     $('i').removeClass('hvr-grow-rotate');
-  }
+  };
 
 });
