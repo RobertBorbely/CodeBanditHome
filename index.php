@@ -123,7 +123,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {*/
 							<!--<div class="col-md-3 parent social">
 								<a class="child" href="http://www.facebook.com/borbely.robert" target="_blank"><i class="fa fa-facebook-official fa-4x hvr-grow-rotate"></i></a>
 							</div>-->
-							<div class="col-md-12 social">
+							<div class="col-md-offset-3 col-md-6 social">
 								<img class="img-circle profile" src="http://placehold.it/350x350" alt="profile_picture" />
 							</div>
 							<!--<div class="col-md-3 parent social">
