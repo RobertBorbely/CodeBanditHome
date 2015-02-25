@@ -119,13 +119,50 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {*/
 
 			<section id="about-page" class="inner cover page-hidden">
 				<div class="container">
-						<div class="col-md-12 picture">
-							
+						<div id="about-header" class="row">
+							<!--<div class="col-md-3 parent social">
+								<a class="child" href="http://www.facebook.com/borbely.robert" target="_blank"><i class="fa fa-facebook-official fa-4x hvr-grow-rotate"></i></a>
+							</div>-->
+							<div class="col-md-12 social">
+								<img class="img-circle profile" src="http://placehold.it/350x350" alt="profile_picture" />
+							</div>
+							<!--<div class="col-md-3 parent social">
+								<a class="child" href="https://github.com/RobertBorbely" target="_blank"><i class="fa fa-github-square fa-4x hvr-grow-rotate"></i></a>
+							</div>-->
 						</div>
-						<div class="col-md-12">
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor felis, consequat ut eleifend id, feugiat quis ex. Fusce feugiat rutrum mauris eu feugiat. Sed ultricies rhoncus ipsum, sed rutrum metus dignissim eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc tellus tortor, luctus ac tristique at, maximus vel ante. Morbi non imperdiet nibh. Quisque non elit aliquet, condimentum est non, faucibus odio. Nam tincidunt, orci at iaculis maximus, tellus felis fermentum odio, eget lobortis mauris odio ut quam. Suspendisse sed lorem at ex varius lacinia non in nisl. Suspendisse placerat diam nec lacus interdum aliquam. Aenean ultrices augue dui, a sodales nunc tincidunt vitae. Sed pulvinar quam in urna semper, sed pretium augue pulvinar. Fusce accumsan arcu nec orci lobortis auctor.
-</p>
+						<div id="about-content" class="col-sm-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem lorem, tempor quis erat non,
+								 tristique tristique justo. Curabitur sed augue leo. Integer eu sagittis mi. Maecenas convallis elit
+								id purus gravida elementum. Phasellus tincidunt vitae turpis vel gravida. Suspendisse euismod eget nisi
+								 sed malesuada. Phasellus fringilla, dui in commodo tempor, felis sapien vestibulum nulla, ac lacinia nisi
+								 ipsum eget ante. Praesent viverra posuere faucibus. Nam eget blandit risus.
+							</p>
+						</div>
+						<div id="about-footer" class="row">
+							<div class="col-md-4">
+								<img class="" src="http://placehold.it/300x200" alt="design_work"/>
+								<h3 class="text-center">Heading</h3>
+								<p class="text-center">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem lorem, tempor quis erat non,
+										tristique tristique justo. Curabitur sed augue leo. Integer eu
+								</p>
+							</div>
+							<div class="col-md-4">
+								<img class="" src="http://placehold.it/300x200" alt="coding" />
+								<h3 class="text-center">Heading</h3>
+								<p class="text-center">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem lorem, tempor quis erat non,
+										tristique tristique justo. Curabitur sed augue leo. Integer eu
+								</p>
+							</div>
+							<div class="col-md-4">
+								<img class="" src="http://placehold.it/300x200" alt="whatever" />
+								<h3 class="text-center">Heading</h3>
+								<p class="text-center">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem lorem, tempor quis erat non,
+										tristique tristique justo. Curabitur sed augue leo. Integer eu
+								</p>
+							</div>
 						</div>
 				</div>
 			</section>
@@ -152,12 +189,12 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {*/
 									</div>
 									<div class="form-group">
 										<label>Üzenet</label>
-										<textarea class="form-control" placeholder="Your message here.." name="message" rows="4" data-placement="top" data-trigger="manual"></textarea>
+										<textarea class="form-control" placeholder="Üzeneted..." name="message" rows="4" data-placement="top" data-trigger="manual"></textarea>
 									</div>
 									<div class="form-group">
 										<label>E-Mail</label>
-										<input class="form-control email" name="email" placeholder="email@you.com (so that we can contact you)"
-												   data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)"
+										<input class="form-control email" name="email" placeholder="test@elek.hu"
+												   data-placement="top" data-trigger="manual" data-content="Érvényes e-mail címnek kell lennie !"
 													 type="email">
 									</div>
 									<div class="form-group"><button id="submit" name="submit" type="submit" value="Send" class="btn btn-success pull-right">Küldés</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>

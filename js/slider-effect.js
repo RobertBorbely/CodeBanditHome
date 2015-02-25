@@ -11,6 +11,8 @@ $(document).ready(function() {
 		currentActiveLink.removeClass('active');
 		$(this).addClass('active');
 
+		$('.mastfoot').show();
+
 		e.preventDefault();
 	});
 
@@ -24,6 +26,8 @@ $(document).ready(function() {
 
 		currentActiveLink.removeClass('active');
 		$(this).addClass('active');
+
+		$('.mastfoot').show();
 
 		e.preventDefault();
 	});
@@ -39,12 +43,24 @@ $(document).ready(function() {
 		currentActiveLink.removeClass('active');
 		$(this).addClass('active');
 
+		$('.mastfoot').hide();
+
 		e.preventDefault();
 	});
 
-	setTimeout(fade_out, 5000);
+	/*var divs = $('.social');
+	var point = false;
+	var counter = 0;
+	$(window).scroll(function(){
+		if($(window).scrollTop()<250){
+			divs.fadeIn("slow", function() {
+				$('.jspoint').switchClass('col-md-12', 'col-md-6');
+			});
+		} else {
+			divs.fadeOut("slow", function () {
+				$('.jspoint').switchClass('col-md-6', 'col-md-12');
+			});
+		}
 
-	function fade_out(){
-		$("#alert").fadeOut().empty();
-	};
+	});*/
 });

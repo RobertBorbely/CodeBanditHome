@@ -27,18 +27,15 @@ body {
 	background-color: #2c3e50;
 	font-style: 'Muli', sans-serif;
 	line-height: 1.5em;
-
+	color: #ecf0f1;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 h1 {
 	font-weight: 700;
 	letter-spacing: 1px;
 	font-size: 36px;
-}
-body {
-	color: #ecf0f1;
-	text-align: center;
-	text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 #first {
@@ -169,14 +166,26 @@ a i {
 * About
 */
 
-.picture {
-	width: 300px;
-		height: 300px;
-		border-radius: 150px;
-		-webkit-border-radius: 150px;
-		-moz-border-radius: 150px;
-		background: url(../img/profil.JPG) no-repeat;
-		text-align: center;
+#about-header {
+	margin:3% auto;
+}
+
+#about-content {
+	margin: 2% auto;
+}
+
+.parent {
+	display: flex;
+	height:350px;
+}
+
+.child {
+		width: 100%;  /* Or whatever */ /* Or whatever */
+		margin: auto;  /* Magic! */
+}
+
+.test {
+	display: none;
 }
 
 /*
@@ -227,4 +236,12 @@ a i {
 .mastfoot,
 .cover-container {
 }
+}
+
+@media (max-width: 758px){
+	.parent {
+		display:none;
+	}
+
+
 }
