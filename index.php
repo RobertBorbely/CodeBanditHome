@@ -103,15 +103,12 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {*/
 					<div class="row">
 						<figure id="#pic1" class="col-md-4 col-sm-6 col-xs-12">
 							<a href="#" class="hvr-bounce-in"><img src="http://placehold.it/1920x1080"></a>
-							<figcaption>Macbook decal design | Adobe Illustrator</figcaption>
 						</figure>
 						<figure id="#pic2" class="col-md-4 col-sm-6 col-xs-12">
 							<a href="#" class="hvr-bounce-in"><img src="http://placehold.it/1920x1080"></a>
-							<figcaption>'Lotus Spa' theme | Wordpress</figcaption>
 						</figure>
 						<figure id="#pic3" class="col-md-4 col-sm-6 col-xs-12">
 							<a href="#" class="hvr-bounce-in"><img src="http://placehold.it/1920x1080"></a>
-							<figcaption>'Flex' theme | Wordpress</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -120,47 +117,45 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {*/
 			<section id="about-page" class="inner cover page-hidden">
 				<div class="container">
 						<div id="about-header" class="row">
-							<!--<div class="col-md-3 parent social">
-								<a class="child" href="http://www.facebook.com/borbely.robert" target="_blank"><i class="fa fa-facebook-official fa-4x hvr-grow-rotate"></i></a>
-							</div>-->
+
 							<div class="col-md-offset-3 col-md-6 social">
-								<img class="img-circle profile" src="http://placehold.it/350x350" alt="profile_picture" />
+								<img class="img-circle profile" src="img/profil.jpg" alt="profile_picture" />
 							</div>
-							<!--<div class="col-md-3 parent social">
-								<a class="child" href="https://github.com/RobertBorbely" target="_blank"><i class="fa fa-github-square fa-4x hvr-grow-rotate"></i></a>
+							<!--<div class="col-xs-offset-5 col-xs-1">
+								<a href="http://www.facebook.com/borbely.robert" target="_blank"><i class="fa fa-facebook-official fa-2x hvr-grow-rotate"></i></a>
+							</div>
+							<div class="col-xs-1">
+								<a href="https://github.com/RobertBorbely" target="_blank"><i class="fa fa-github-square fa-2x hvr-grow-rotate"></i></a>
 							</div>-->
 						</div>
 						<div id="about-content" class="col-sm-12">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem lorem, tempor quis erat non,
-								 tristique tristique justo. Curabitur sed augue leo. Integer eu sagittis mi. Maecenas convallis elit
-								id purus gravida elementum. Phasellus tincidunt vitae turpis vel gravida. Suspendisse euismod eget nisi
-								 sed malesuada. Phasellus fringilla, dui in commodo tempor, felis sapien vestibulum nulla, ac lacinia nisi
-								 ipsum eget ante. Praesent viverra posuere faucibus. Nam eget blandit risus.
+							<h2 class="text-center" >Üdvözöllek!</h2>
+							<p>
+								Borbély Róbert vagyok a Szegedi Tudomány Egyetem Természettudományis és Informatikai kar hallgatója és ez az én bemutatkozó honlapon.
+								Hobbi szinten foglalkozom web desginnal és készítéssel és szeretném ezt minnél magasabb fokon művelni ezért jött létre ez a honlap is.
+								Ennek a honlapnak az a célja, hogy bemutassa eddigi munkáim és a jövőben elkészülő projektjeim.
 							</p>
 						</div>
 						<div id="about-footer" class="row">
-							<div class="col-md-4">
-								<img class="" src="http://placehold.it/300x200" alt="design_work"/>
-								<h3 class="text-center">Heading</h3>
+							<div class="col-md-4 portfolio">
+								<a class="hvr-bounce-in" href="#portfolio-page" ><img class="" src="img/soft.jpg" alt="design_work"/></a>
+								<h3 class="text-center">Design tevékenység</h3>
 								<p class="text-center">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem lorem, tempor quis erat non,
-										tristique tristique justo. Curabitur sed augue leo. Integer eu
+									Hobbi szinten foglalkozom logó és ikon designnal valamint honlap tervezéssel ezzel könnyítem meg a honlapok megvalósítását és kellemes kikapcsolódást is biztosít.
 								</p>
 							</div>
-							<div class="col-md-4">
-								<img class="" src="http://placehold.it/300x200" alt="coding" />
-								<h3 class="text-center">Heading</h3>
+							<div class="col-md-4 portfolio">
+								<a class="hvr-bounce-in" href="#portfolio-page" ><img class="" src="img/insp.jpg" alt="finished_projects" /></a>
+								<h3 class="text-center">Honlap készítés</h3>
 								<p class="text-center">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem lorem, tempor quis erat non,
-										tristique tristique justo. Curabitur sed augue leo. Integer eu
+									Szabad időmben foglalkozom, honlap és "theme" készítéssel ezzel fejlesztve magam. A forrás kódok a github fiókomon megtekinthetőek az élő honlapok feltöltés alatt állnak.
 								</p>
 							</div>
-							<div class="col-md-4">
-								<img class="" src="http://placehold.it/300x200" alt="whatever" />
-								<h3 class="text-center">Heading</h3>
-								<p class="text-center">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem lorem, tempor quis erat non,
-										tristique tristique justo. Curabitur sed augue leo. Integer eu
+							<div class="col-md-4 portfolio">
+								<a class="hvr-bounce-in" href="#portfolio-page" ><img class="" src="img/coffe.jpg" alt="on_going-projects" /></a>
+								<h3 class="text-center">Folyamatban lévő projektek</h3>
+								<p>
+									Jelenleg egy Wordpress theme-t fejlesztek a minimalista szemléletet követve továbbá egy webárúház elkészítése van folyamatban Ruby on Railssel.
 								</p>
 							</div>
 						</div>

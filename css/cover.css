@@ -176,7 +176,7 @@ a i {
 
 .parent {
 	display: flex;
-	height:350px;
+	height: 350px;
 }
 
 .child {
@@ -186,6 +186,17 @@ a i {
 
 .test {
 	display: none;
+}
+
+.profile {
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	background: url(../img/profil.jpg) no-repeat;
+}
+
+.portfolio img {
+	width:100%;
 }
 
 /*
@@ -242,6 +253,14 @@ a i {
 	.parent {
 		display:none;
 	}
+	.social {
+		width: 325px;
+		height: 325px;
+		display:none;
+	}
 
+	.social img {
+		width: 70%;
+	}
 
 }
